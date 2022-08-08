@@ -75,7 +75,7 @@ jobs:
             npm install
             npm run test
 
-  # Analyze (Audit) your code to check vulnerabilities
+  # Analyze your code to check vulnerabilities
   scan-frontend:
     docker:
       - image: circleci/node:13.8.0
