@@ -217,7 +217,7 @@ jobs:
           paths:
             - project/backend/.env
 
-# jobs via workflows
+# jobs via workflow
 workflows:
   default:
     jobs:
