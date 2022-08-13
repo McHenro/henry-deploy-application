@@ -238,7 +238,7 @@ jobs:
 
   run-migrations:
     docker:
-      - image: cimg/node:18.3.0
+      - image: cimg/node:18.4.0
     steps:
       - checkout
       - awscli
@@ -382,7 +382,7 @@ jobs:
             echo ${URL}
             if curl -s ${URL} | grep "Welcome"
             then
-              exit 1
+              exit 0
             else
               exit 1
             fi
