@@ -238,7 +238,7 @@ jobs:
 
   run-migrations:
     docker:
-      - image: cimg/node:18.4.0
+      - image: cimg/node:13.8.0
     steps:
       - checkout
       - awscli
@@ -371,7 +371,7 @@ jobs:
             echo ${API_URL}
             if curl -s $API_URL/api/status | grep "ok"
             then
-              exit 1
+              exit 0
             else
               exit 1
             fi
