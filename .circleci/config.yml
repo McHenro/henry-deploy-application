@@ -400,7 +400,7 @@ jobs:
       - awscli
       - nodejs
       - run:
-          name: Save Old Workflow ID to a text file
+          name: Save Old Workflow ID to a text file.
           command: |
             aws cloudformation \
                list-exports --query "Exports[?Name==\`WorkflowID\`].Value" \
